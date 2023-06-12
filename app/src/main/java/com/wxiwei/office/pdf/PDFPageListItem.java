@@ -42,11 +42,7 @@ import android.widget.ProgressBar;
  */
 public class PDFPageListItem extends APageListItem
 {
-    /**
-     * 
-     * @param content
-     * @param parentSize
-     */
+
     public PDFPageListItem(APageListView listView, IControl control, int pageWidth, int pageHeight)
     {
         super(listView, pageWidth, pageHeight);
@@ -120,12 +116,7 @@ public class PDFPageListItem extends APageListItem
         
     }
     
-    /**
-     * 
-     * @param pageIndex     page index (base 0)
-     * @param pageWidth     page width of after scaled
-     * @param pageHeight    page height of after scaled
-     */
+
     public void setPageItemRawData(final int pIndex, int pWidth, int pHeight)
     {
         super.setPageItemRawData(pIndex, pWidth, pHeight);
@@ -138,7 +129,7 @@ public class PDFPageListItem extends APageListItem
         }
         if (originalImageView == null)
         {
-            originalImageView = new ImageView(listView.getContext())
+            originalImageView = new androidx.appcompat.widget.AppCompatImageView(listView.getContext())
             {
                 public boolean isOpaque()
                 {
@@ -414,11 +405,7 @@ public class PDFPageListItem extends APageListItem
 //        }
     }
 
-    /**
-     * black page
-     * 
-     * @param pageIndex page index (base 0)
-     */
+
     public void blank(int pIndex)
     {
         super.blank(pIndex);
@@ -449,11 +436,7 @@ public class PDFPageListItem extends APageListItem
             mBusyIndicator.setVisibility(VISIBLE);
         }
     }
-    
-    /**
-     * 
-     * @param f
-     */
+
     public void setLinkHighlighting(boolean vlaue)
     {
         /*if (mSearchView != null)
@@ -522,7 +505,7 @@ public class PDFPageListItem extends APageListItem
             // Create and add the image view if not already done
             if (repaintImageView == null)
             {
-                repaintImageView = new ImageView(listView.getContext())
+                repaintImageView = new androidx.appcompat.widget.AppCompatImageView(listView.getContext())
                 {
                     public boolean isOpaque()
                     {
@@ -550,11 +533,7 @@ public class PDFPageListItem extends APageListItem
             final PDFPageListItem own = this;
             repaintSyncTask = new SafeAsyncTask<RepaintAreaInfo, Void, RepaintAreaInfo>()
             {
-                /**
-                 * 
-                 * @see android.os.AsyncTask#doInBackground(Params[])
-                 *
-                 */
+
                 protected RepaintAreaInfo doInBackground(RepaintAreaInfo...v)
                 {
                     try

@@ -9,6 +9,7 @@ package com.wxiwei.office.fc.pdf;
 import android.graphics.Bitmap;
 import android.graphics.Rect;
 import android.graphics.RectF;
+import android.util.Log;
 
 /**
  * reader PDF for native method
@@ -35,7 +36,14 @@ public class PDFLib
      */
     static
     {
-        System.loadLibrary("wxiweiPDF");
+        try {
+            System.loadLibrary("wxiweiPDF");
+
+        }
+        catch (Exception e)
+        {
+            Log.d("native_lib",e.getLocalizedMessage());
+        }
     }
     
     /**

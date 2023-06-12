@@ -42,7 +42,7 @@ public class AToolsbar extends HorizontalScrollView
 {
     /**
      * 
-     * @param context
+//     * @param context
      * @param control 
      */
     public AToolsbar(Context content, IControl control)
@@ -59,11 +59,11 @@ public class AToolsbar extends HorizontalScrollView
         // button size
         BitmapFactory.Options opts = new BitmapFactory.Options();
         opts.inJustDecodeBounds = true;
-        BitmapFactory.decodeResource(getResources(),  R.drawable.sys_toolsbar_button_bg_normal, opts);        
+//        BitmapFactory.decodeResource(getResources(),  R.drawable.sys_toolbar_button_bg_normal_new, opts);
         this.buttonWidth = opts.outWidth;
         this.buttonHeight = opts.outHeight;
-        
-        toolsbarFrame.setBackgroundResource(R.drawable.sys_toolsbar_button_bg_normal);
+
+//        toolsbarFrame.setBackgroundResource(R.drawable.sys_toolbar_button_bg_normal_new);
         addView(toolsbarFrame, new LayoutParams(LayoutParams.MATCH_PARENT, buttonHeight));
     }
     
@@ -89,9 +89,9 @@ public class AToolsbar extends HorizontalScrollView
     
     /**
      * 
-     * @param iconID
+//     * @param iconID
      * @param iconResIdDisable
-     * @param tooltipID
+//     * @param tooltipID
      * @param actionID
      * @return
      */
@@ -102,7 +102,7 @@ public class AToolsbar extends HorizontalScrollView
         Resources res = context.getResources();
         AImageButton tb = new AImageButton(context, control, 
             res.getString(tooltipResID), iconResID, iconResIdDisable, actionID);         
-        tb.setNormalBgResID(R.drawable.sys_toolsbar_button_bg_normal);
+        tb.setNormalBgResID(R.drawable.sys_toolbar_button_bg_normal_new);
         tb.setPushBgResID(R.drawable.sys_toolsbar_button_bg_push);
         tb.setLayoutParams(new LayoutParams(buttonWidth, buttonHeight));        
         toolsbarFrame.addView(tb);
@@ -141,7 +141,7 @@ public class AToolsbar extends HorizontalScrollView
             res.getString(checktipResID), res.getString(unchecktipResID), checkIconResID, uncheckIconResID,
             iconResIdDisable, actionID); 
         
-        tb.setNormalBgResID(R.drawable.sys_toolsbar_button_bg_normal);
+        tb.setNormalBgResID(R.drawable.sys_toolbar_button_bg_normal_new);
         tb.setPushBgResID(R.drawable.sys_toolsbar_button_bg_push);
         tb.setLayoutParams(new LayoutParams(buttonWidth, buttonHeight));
         //tb.setOnClickListener(this);

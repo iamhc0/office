@@ -1210,7 +1210,7 @@ public class DOCXReader extends AbstractReader
     
     /**
      * 
-     * @param rPr
+//     * @param rPr
      * @param attr
      */
     private void processParaAttribute(Element pPr, IAttributeSet attr, int level)

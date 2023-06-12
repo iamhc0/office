@@ -35,7 +35,7 @@ public class WPToolsbar extends AToolsbar
 {
     /**
      * 
-     * @param context
+//     * @param context
      * @param control
      */
     public WPToolsbar(Context content, IControl control)
@@ -49,13 +49,15 @@ public class WPToolsbar extends AToolsbar
      */
     private void init()
     {
+
+
         //copy
-        addButton(R.drawable.file_copy, R.drawable.file_copy_disable,
-            R.string.file_toolsbar_copy, EventConstant.FILE_COPY_ID, true);
-        
-        // 查找
-        addButton(R.drawable.app_find, R.drawable.app_find_disable, 
-            R.string.app_toolsbar_find, EventConstant.APP_FIND_ID, true);
+//        addButton(R.drawable.file_copy, R.drawable.file_copy_disable,
+//            R.string.file_toolsbar_copy, EventConstant.FILE_COPY_ID, true);
+//
+//        // 查找
+//        addButton(R.drawable.app_find, R.drawable.app_find_disable,
+//            R.string.app_toolsbar_find, EventConstant.APP_FIND_ID, true);
         
         // 选择文本
         //addButton(R.drawable.wp_select_text, R.drawable.wp_select_text_disable, 
@@ -64,30 +66,30 @@ public class WPToolsbar extends AToolsbar
         // 非文本文件才需要视图切换
         //if (!((String)control.getActionValue(EventConstant.SYS_FILEPAHT_ID)).endsWith(MainConstant.FILE_TYPE_TXT))
         {
-           // 视图切换
-            addButton(R.drawable.wp_switch_view, R.drawable.wp_switch_view_disable, 
-                R.string.wp_toolsbar_switch_view, EventConstant.WP_SWITCH_VIEW, true);
-            // print mode
-            addButton(R.drawable.app_print_n, R.drawable.app_print_d, 
-                R.string.wp_toolsbar_print_mode, EventConstant.WP_PRINT_MODE, true);
+//           // 视图切换
+//            addButton(R.drawable.wp_switch_view, R.drawable.wp_switch_view_disable,
+//                R.string.wp_toolsbar_switch_view, EventConstant.WP_SWITCH_VIEW, true);
+//            // print mode
+//            addButton(R.drawable.app_print_n, R.drawable.app_print_d,
+//                R.string.wp_toolsbar_print_mode, EventConstant.WP_PRINT_MODE, true);
         }
         
-        // 分享
-        addButton(R.drawable.file_share, R.drawable.file_share_disable, 
-            R.string.file_toolsbar_share, EventConstant.APP_SHARE_ID, true);
+//        // 分享
+//        addButton(R.drawable.file_share, R.drawable.file_share_disable,
+//            R.string.file_toolsbar_share, EventConstant.APP_SHARE_ID, true);
         
-        // 联网搜索
-        addButton(R.drawable.app_internet_search, R.drawable.app_internet_search_disable, 
-            R.string.app_toolsbar_internet_search, EventConstant.APP_INTERNET_SEARCH_ID, true);
+//        // 联网搜索
+//        addButton(R.drawable.app_internet_search, R.drawable.app_internet_search_disable,
+//            R.string.app_toolsbar_internet_search, EventConstant.APP_INTERNET_SEARCH_ID, true);
         
         // 标星
-        addCheckButton(R.drawable.file_star_check, R.drawable.file_star_uncheck,R.drawable.file_star_disable,
+        addCheckButton(R.drawable.star_fill_min, R.drawable.star_line_min,R.drawable.file_star_disable,
             R.string.file_toolsbar_mark_star, R.string.file_toolsbar_unmark_star,
             EventConstant.FILE_MARK_STAR_ID, true);
         
-        // 标签
-        addButton(R.drawable.app_drawing, R.drawable.app_drawing_disable, 
-            R.string.app_toolsbar_draw, EventConstant.APP_DRAW_ID, true);
+//        // 标签
+//        addButton(R.drawable.app_drawing, R.drawable.app_drawing_disable,
+//            R.string.app_toolsbar_draw, EventConstant.APP_DRAW_ID, true);
         
         // 朗读
         /*addButton(R.drawable.app_read, R.drawable.app_read_disable, 

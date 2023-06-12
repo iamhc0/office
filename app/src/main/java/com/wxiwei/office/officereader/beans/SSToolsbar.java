@@ -39,7 +39,7 @@ public class SSToolsbar extends AToolsbar
     /**
      * 
      * @param context
-     * @param attrs
+//     * @param attrs
      */
     public SSToolsbar(Context context, IControl control)
     {
@@ -59,36 +59,37 @@ public class SSToolsbar extends AToolsbar
 
     /**
      * 
-     * @param context
+//     * @param context
      */
     private void init()
     {
         //copy
-        addButton(R.drawable.file_copy, R.drawable.file_copy_disable,
-            R.string.file_toolsbar_copy, EventConstant.FILE_COPY_ID, true);
+//        addButton(R.drawable.file_copy, R.drawable.file_copy_disable,
+//            R.string.file_toolsbar_copy, EventConstant.FILE_COPY_ID, true);
         //goto
-        addButton(R.drawable.app_internet_hyperlink, R.drawable.app_internet_hyperlink_disable,
-            R.string.app_toolsbar_hyperlink, EventConstant.APP_HYPERLINK, true);
+//        addButton(R.drawable.app_internet_hyperlink, R.drawable.app_internet_hyperlink_disable,
+//            R.string.app_toolsbar_hyperlink, EventConstant.APP_HYPERLINK, true);
         // 查找
-        addButton(R.drawable.app_find, R.drawable.app_find_disable,
-            R.string.app_toolsbar_find, EventConstant.APP_FIND_ID, true);
+//        addButton(R.drawable.app_find, R.drawable.app_find_disable,
+//            R.string.app_toolsbar_find, EventConstant.APP_FIND_ID, true);
         
         // 分享
-        addButton(R.drawable.file_share, R.drawable.file_share_disable, 
-            R.string.file_toolsbar_share, EventConstant.APP_SHARE_ID, true);
+//        addButton(R.drawable.file_share, R.drawable.file_share_disable,
+//            R.string.file_toolsbar_share, EventConstant.APP_SHARE_ID, true);
         
         // 联网搜索
-        addButton(R.drawable.app_internet_search, R.drawable.app_internet_search_disable, 
-            R.string.app_toolsbar_internet_search, EventConstant.APP_INTERNET_SEARCH_ID, true);
+//        addButton(R.drawable.app_internet_search, R.drawable.app_internet_search_disable,
+//            R.string.app_toolsbar_internet_search, EventConstant.APP_INTERNET_SEARCH_ID, true);
         
         // 标星
-        addCheckButton(R.drawable.file_star_check, R.drawable.file_star_uncheck,R.drawable.file_star_disable,
+        addCheckButton(R.drawable.star_fill_min, R.drawable.star_line_min,R.drawable.file_star_disable,
             R.string.file_toolsbar_mark_star, R.string.file_toolsbar_unmark_star,
+
             EventConstant.FILE_MARK_STAR_ID, true);
         
         // 标签
-        addButton(R.drawable.app_drawing, R.drawable.app_drawing_disable, 
-            R.string.app_toolsbar_draw, EventConstant.APP_DRAW_ID, true);
+//        addButton(R.drawable.app_drawing, R.drawable.app_drawing_disable,
+//            R.string.app_toolsbar_draw, EventConstant.APP_DRAW_ID, true);
         
 //        // 朗读
 //        addButton(R.drawable.app_read, R.drawable.app_read_disable, 
@@ -104,6 +105,12 @@ public class SSToolsbar extends AToolsbar
         
         // 帮助
         //addButton(R.drawable.file_help, -1, R.string.sys_menu_help, EventConstant.SYS_HELP_ID, false);
+
+
+        addCheckButton(R.drawable.star_fill_min, R.drawable.star_line_min,R.drawable.file_star_disable,
+                R.string.file_toolsbar_mark_star, R.string.file_toolsbar_unmark_star,
+
+                EventConstant.FILE_MARK_STAR_ID, true);
 
     }
     

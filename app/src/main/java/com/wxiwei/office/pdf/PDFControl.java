@@ -44,13 +44,7 @@ import android.view.View;
  */
 public class PDFControl extends AbstractControl
 {
-    
-    /**
-     * 
-     * @param appControl
-     * @param doc
-     * @param filePath
-     */
+
     public PDFControl(IControl mainControl, PDFLib pdfLib, String filePath)
     {
         this.mainControl = mainControl;

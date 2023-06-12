@@ -38,14 +38,7 @@ import android.os.Message;
  */
 public class FileReaderThread extends Thread
 {
-   
-    /**
-     * 
-     * @param activity
-     * @param handler
-     * @param filePath
-     * @param encoding
-     */
+
     public FileReaderThread(IControl control, Handler handler, String filePath, String encoding)
     {
         this.control = control;

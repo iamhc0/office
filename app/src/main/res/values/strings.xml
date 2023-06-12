@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--      system         -->
-    <string name="sys_name">iOffice</string>	
+    <string name="sys_name">iOffice</string>
     <string name="sys_button_ok">OK</string>
     <string name="sys_button_cancel">Cancel</string>
     <string name="sys_button_memory_card">MemoryCard</string>

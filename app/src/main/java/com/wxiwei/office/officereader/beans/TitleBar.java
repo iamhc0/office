@@ -43,7 +43,7 @@ public class TitleBar extends LinearLayout
         
         BitmapFactory.Options opts = new BitmapFactory.Options();
         opts.inJustDecodeBounds = true;
-        BitmapFactory.decodeResource(getResources(),  R.drawable.sys_title_bg_vertical, opts); 
+        BitmapFactory.decodeResource(getResources(),  R.drawable.sys_toolbar_button_bg_normal_new, opts);
         height = opts.outHeight;        
 
         setBackgroundResource(R.drawable.sys_title_bg_vertical);

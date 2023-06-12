@@ -279,7 +279,7 @@ public class Word extends LinearLayout implements IWord
 
     /**
      * 
-     * @param destBitmap
+//     * @param destBitmap
      * @return
      */
     public Bitmap getSnapshot(Bitmap bitmap)
@@ -897,7 +897,7 @@ public class Word extends LinearLayout implements IWord
     }
 
     /**
-     * @param wordWidth The wordWidth to set.
+//     * @param wordWidth The wordWidth to set.
      */
     public void setWordWidth(int mWidth)
     {
@@ -905,7 +905,7 @@ public class Word extends LinearLayout implements IWord
     }
 
     /**
-     * @param wordHeight The wordHeight to set.
+//     * @param wordHeight The wordHeight to set.
      */
     public void setWordHeight(int mHeight)
     {
@@ -957,8 +957,8 @@ public class Word extends LinearLayout implements IWord
      * switch page for page index (base 0)
      * 
      * @param index     page index
-     * 
-     * @param dircetion
+//     *
+//     * @param dircetion
      */
     protected void showPage(int index, int direction)
     {
@@ -1020,10 +1020,10 @@ public class Word extends LinearLayout implements IWord
     /**
      * specific area of page to image. if area is not completely contained in the page, return null
      * @param pageNumber page number
-     * @param x The x coordinate
-     * @param y The y coordinate
-     * @param width area width
-     * @param height area height
+//     * @param x The x coordinate
+//     * @param y The y coordinate
+//     * @param width area width
+//     * @param height area height
      * @return
      */
     public Bitmap pageAreaToImage(int pageNumber, int srcLeft, int srcTop, int srcWidth, int srcHeight, int desWidth, int desHeight)
@@ -1211,7 +1211,7 @@ public class Word extends LinearLayout implements IWord
 
     /**
      * 
-     * @param para
+//     * @param para
      * @return
      */
     public FadeAnimation getParagraphAnimation(int pargraphID)

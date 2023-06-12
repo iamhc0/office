@@ -96,7 +96,7 @@ public class SlideDrawKit
      * @param editor
      * @param slide
      * @param zoom
-     * @param isPlaying
+//     * @param isPlaying
      */
     public void drawSlide(Canvas canvas, PGModel pgModel, PGEditor editor, PGSlide slide, float zoom, Map<Integer, Map<Integer, IAnimation>> shapeVisible)
     {
@@ -366,7 +366,7 @@ public class SlideDrawKit
     /**
      * 
      * @param canvas
-     * @param picture
+//     * @param picture
      * @param zoom
      */
     private void drawPicture(Canvas canvas, PGEditor editor, int slideNo, PictureShape pictureShape, float zoom)
@@ -456,11 +456,10 @@ public class SlideDrawKit
         if(table.getAnimation() != null 
             && (alpha = table.getAnimation().getCurrentAnimationInfor().getAlpha()) != 255)
         {
-            int LAYERS_FLAGS = Canvas.MATRIX_SAVE_FLAG |
-                Canvas.CLIP_SAVE_FLAG
-                | Canvas.HAS_ALPHA_LAYER_SAVE_FLAG
-                | Canvas.FULL_COLOR_LAYER_SAVE_FLAG
-                | Canvas.CLIP_TO_LAYER_SAVE_FLAG; 
+            int LAYERS_FLAGS = Canvas.ALL_SAVE_FLAG
+                    | Canvas.ALL_SAVE_FLAG
+                    | Canvas.ALL_SAVE_FLAG
+                    | Canvas.ALL_SAVE_FLAG;
 
             Rectangle tableRect = table.getBounds();
             if (tableRect != null)

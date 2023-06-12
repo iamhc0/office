@@ -75,11 +75,10 @@ public class AImageButton extends View implements OnGestureListener, OnClickList
      * 
      */
     protected void onFocusChanged(boolean gainFocus,
-        int direction, Rect previouslyFocusedRect)
-    {
+        int direction, Rect previouslyFocusedRect) {
+        super.onFocusChanged(gainFocus, direction, previouslyFocusedRect);
         int id = gainFocus ? focusBgResID : normalBgResID;
-        if (id != -1)
-        {
+        if (id != -1) {
             setBackgroundResource(id);
         }
     }

@@ -30,7 +30,7 @@ import android.widget.CheckBox;
  * <p>
  * <p>
  */
-public class FileCheckBox extends CheckBox
+public class FileCheckBox extends androidx.appcompat.widget.AppCompatCheckBox
 {
     /**
      * 

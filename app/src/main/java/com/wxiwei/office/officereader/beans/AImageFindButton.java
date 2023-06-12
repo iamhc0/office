@@ -83,7 +83,7 @@ public class AImageFindButton extends LinearLayout implements OnGestureListener,
         //search button
         btn = new AImageButton(context, control, 
             toolstip, iconResID, iconResIdDisable, actionID);         
-        btn.setNormalBgResID(R.drawable.sys_toolsbar_button_bg_normal);
+        btn.setNormalBgResID(R.drawable.sys_toolbar_button_bg_normal_new);
         btn.setPushBgResID(R.drawable.sys_toolsbar_button_bg_push);
         btn.setLayoutParams(new LayoutParams(btnWidth, height));        
         btn.setOnClickListener(this);
@@ -130,7 +130,7 @@ public class AImageFindButton extends LinearLayout implements OnGestureListener,
        // 如果相等，基本可以确定button总宽度小于屏幕宽度
        //if (getWidth() == getResources().getDisplayMetrics().widthPixels)
        {
-           setBackgroundResource(R.drawable.sys_toolsbar_button_bg_normal);
+           setBackgroundResource(R.drawable.sys_background_horizontal);
        }
     }
     

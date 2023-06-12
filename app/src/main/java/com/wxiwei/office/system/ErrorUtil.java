@@ -189,7 +189,7 @@ public class ErrorUtil
                 public void run()
                 {                 
                     try
-                    {                 
+                    {
                         String err = "";
                         String error = ex.toString();
                         int errorCode = SYSTEM_CRASH;
@@ -250,11 +250,11 @@ public class ErrorUtil
                         else if (ex instanceof NullPointerException
                             || ex instanceof IllegalArgumentException
                             || ex instanceof ClassCastException)
-                        {
-                            err = control.getMainFrame().getLocalString("DIALOG_SYSTEM_CRASH");
-                            errorCode = SYSTEM_CRASH;
-                        }
-                        else if (sysKit.isDebug())
+//                        {
+//                            err = control.getMainFrame().getLocalString("DIALOG_SYSTEM_CRASH");
+//                            errorCode = SYSTEM_CRASH;
+//                        }
+                         if (sysKit.isDebug())
                         {
                             err = control.getMainFrame().getLocalString("DIALOG_SYSTEM_CRASH");
                         }

@@ -57,7 +57,7 @@ public class PGToolsbar extends AToolsbar
 
     /**
      * 
-     * @param context
+//     * @param context
      */
     private void init()
     {
@@ -70,33 +70,33 @@ public class PGToolsbar extends AToolsbar
             //R.string.app_toolsbar_hyperlink, EventConstant.APP_HYPERLINK, true);
         
         //slideshow
-        addButton(R.drawable.file_slideshow, R.drawable.file_slideshow,
-            R.string.pg_slideshow, EventConstant.PG_SLIDESHOW_GEGIN, true);
+//        addButton(R.drawable.file_slideshow, R.drawable.file_slideshow,
+//            R.string.pg_slideshow, EventConstant.PG_SLIDESHOW_GEGIN, true);
         
         // 查找
-        addButton(R.drawable.app_find, R.drawable.app_find_disable,            
-            R.string.app_toolsbar_find, EventConstant.APP_FIND_ID, true);
-        
-        // 备注
-        addButton(R.drawable.ppt_node,R.drawable.ppt_node_disable, 
-            R.string.pg_toolsbar_note, EventConstant.PG_NOTE_ID, true);
-        
-        // 分享
-        addButton(R.drawable.file_share, R.drawable.file_share_disable, 
-            R.string.file_toolsbar_share, EventConstant.APP_SHARE_ID, true);
+//        addButton(R.drawable.app_find, R.drawable.app_find_disable,
+//            R.string.app_toolsbar_find, EventConstant.APP_FIND_ID, true);
+//
+//        // 备注
+//        addButton(R.drawable.ppt_node,R.drawable.ppt_node_disable,
+//            R.string.pg_toolsbar_note, EventConstant.PG_NOTE_ID, true);
+//
+//        // 分享
+//        addButton(R.drawable.file_share, R.drawable.file_share_disable,
+//            R.string.file_toolsbar_share, EventConstant.APP_SHARE_ID, true);
         
         // 联网搜索
-        addButton(R.drawable.app_internet_search, R.drawable.app_internet_search_disable, 
-            R.string.app_toolsbar_internet_search, EventConstant.APP_INTERNET_SEARCH_ID, true);
+//        addButton(R.drawable.app_internet_search, R.drawable.app_internet_search_disable,
+//            R.string.app_toolsbar_internet_search, EventConstant.APP_INTERNET_SEARCH_ID, true);
         
         // 标星
-        addCheckButton(R.drawable.file_star_check, R.drawable.file_star_uncheck, 
+        addCheckButton(R.drawable.star_fill_min, R.drawable.star_line_min,
             R.drawable.file_star_disable, R.string.file_toolsbar_mark_star, R.string.file_toolsbar_unmark_star, 
             EventConstant.FILE_MARK_STAR_ID, true);
         
         // 标签
-        addButton(R.drawable.app_drawing, R.drawable.app_drawing_disable, 
-            R.string.app_toolsbar_draw, EventConstant.APP_DRAW_ID, true);
+//        addButton(R.drawable.app_drawing, R.drawable.app_drawing_disable,
+//            R.string.app_toolsbar_draw, EventConstant.APP_DRAW_ID, true);
         
         // 朗读
         //addButton(R.drawable.app_read, R.drawable.app_read_disable, 

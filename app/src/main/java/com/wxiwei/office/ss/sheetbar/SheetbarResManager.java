@@ -6,8 +6,14 @@
  */
 package com.wxiwei.office.ss.sheetbar;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
+import com.wxiwei.office.officereader.R;
 
 /**
  * TODO: 文件注释
@@ -27,15 +33,18 @@ import android.graphics.drawable.Drawable;
  */
 public class SheetbarResManager
 {
+    @SuppressLint("ResourceType")
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public SheetbarResManager(Context context)
     {
         this.context = context;
         
         ClassLoader loader = context.getClassLoader();
         //sheetbar background
-        sheetbarBG =  Drawable.createFromResourceStream(context.getResources(), null, 
-            loader.getResourceAsStream(SheetbarResConstant.RESNAME_SHEETBAR_BG), 
-            SheetbarResConstant.RESNAME_SHEETBAR_BG);
+//        sheetbarBG =  Drawable.createFromResourceStream(context.getResources(), null,
+//            loader.getResourceAsStream(SheetbarResConstant.RESNAME_SHEETBAR_BG),
+//            SheetbarResConstant.RESNAME_SHEETBAR_BG);
+//        sheetbarBG=context.getDrawable("");
         
         //shadow
         sheetbarLeftShadow= Drawable.createFromResourceStream(context.getResources(), null,
@@ -52,7 +61,7 @@ public class SheetbarResManager
             SheetbarResConstant.RESNAME_SHEETBAR_SEPARATOR_H);
             
         //normal state
-        normalLeft = Drawable.createFromResourceStream(context.getResources(), null, 
+        normalLeft = Drawable.createFromResourceStream(context.getResources(), null,
             loader.getResourceAsStream(SheetbarResConstant.RESNAME_SHEETBUTTON_NORMAL_LEFT), 
             SheetbarResConstant.RESNAME_SHEETBUTTON_NORMAL_LEFT);        
         normalRight = Drawable.createFromResourceStream(context.getResources(), null, 

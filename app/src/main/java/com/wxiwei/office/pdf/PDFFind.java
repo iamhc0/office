@@ -22,29 +22,9 @@ import android.graphics.RectF;
 import android.view.KeyEvent;
 import android.widget.Toast;
 
-/**
- * find content
- * <p>
- * <p>
- * Read版本:        Read V1.0
- * <p>
- * 作者:            ljj8494
- * <p>
- * 日期:            2012-9-19
- * <p>
- * 负责人:          ljj8494
- * <p>
- * 负责小组:         
- * <p>
- * <p>
- */
 public class PDFFind implements IFind
 {
 
-    /**
-     * 
-     * @param word
-     */
     public PDFFind(PDFView pdfView)
     {
         this.pdfView = pdfView;
@@ -53,10 +33,7 @@ public class PDFFind implements IFind
         paint.setColor(PDFConstant.HIGHLIGHT_COLOR);
     }
     
-    /**
-     * 
-     *
-     */
+
     public boolean find(String value)
     {
         if (value == null)
@@ -114,13 +91,7 @@ public class PDFFind implements IFind
         return true;
     }
     
-    /**
-     * search of assign content
-     *  
-     * @param direction    = 1  forward
-     *                     = -1  backward   
-     * @return
-     */
+
     private void search(final int direction)
     {        
         if (safeSearchTask != null)
@@ -159,9 +130,6 @@ public class PDFFind implements IFind
         
         safeSearchTask = new SafeAsyncTask<Void, Integer, RectF[]>()
         {
-            /**
-             *
-             */
             protected RectF[] doInBackground(Void...params)
             {
                 try
@@ -355,25 +323,17 @@ public class PDFFind implements IFind
     }
     
     
-    /**
-     * @return Returns the isSetPointToVisible.
-     */
+
     public boolean isSetPointToVisible()
     {
         return isSetPointToVisible;
     }
 
-    /**
-     * @param isSetPointToVisible The isSetPointToVisible to set.
-     */
     public void setSetPointToVisible(boolean isSetPointToVisible)
     {
         this.isSetPointToVisible = isSetPointToVisible;
     }
 
-    /**
-     * 
-     */
     public void dispose()
     {
         pdfView = null;

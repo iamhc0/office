@@ -28,8 +28,8 @@ public class FileItem implements Comparable<FileItem>
 {
     /**
      * 
-     * @param text
-     * @param bullet
+//     * @param text
+//     * @param bullet
      */
     public FileItem(File file, int iconType, int fileStar)
     {

@@ -30,7 +30,7 @@ public class CalloutToolsbar extends AToolsbar
     {
         super(context, control);
         init();
-        toolsbarFrame.setBackgroundResource(R.drawable.sys_toolsbar_button_bg_normal);
+        toolsbarFrame.setBackgroundResource(R.drawable.sys_toolbar_button_bg_normal_new);
     }
 
     private void init()

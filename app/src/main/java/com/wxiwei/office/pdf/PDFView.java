@@ -311,10 +311,10 @@ public class PDFView extends FrameLayout implements IPageListViewListener
     /**
      * specific area of page to image. if area is not completely contained in the page, return null
      * @param pageNumber page number
-     * @param x The x coordinate
-     * @param y The y coordinate
-     * @param width area width
-     * @param height area height
+//     * @param x The x coordinate
+//     * @param y The y coordinate
+//     * @param width area width
+//     * @param height area height
      * @return
      */
     public Bitmap pageAreaToImage(int pageNumber, int srcLeft, int srcTop, int srcWidth, int srcHeight, int desWidth, int desHeight)
@@ -614,7 +614,7 @@ public class PDFView extends FrameLayout implements IPageListViewListener
     
     /**
      * page list view moving position
-     * @param position horizontal or vertical
+//     * @param position horizontal or vertical
      */
     public byte getPageListViewMovingPosition()
     {
@@ -645,7 +645,7 @@ public class PDFView extends FrameLayout implements IPageListViewListener
      * @param       e2            MotionEvent instance
      * @param       velocityX     x axis velocity
      * @param       velocityY     y axis velocity  
-     * @param       eventNethodType  event method      
+//     * @param       eventNethodType  event method
      *              @see IMainFrame#ON_CLICK
      *              @see IMainFrame#ON_DOUBLE_TAP
      *              @see IMainFrame#ON_DOUBLE_TAP_EVENT
@@ -724,7 +724,7 @@ public class PDFView extends FrameLayout implements IPageListViewListener
      *  set change page flag, Only when effectively the PageSize greater than ViewSize.
      *  (for PPT, word print mode, PDF)
      *  
-     *  @param b    = true, change page
+//     *  @param b    = true, change page
      *              = false, don't change page
      */
     public boolean isChangePage()
@@ -735,7 +735,7 @@ public class PDFView extends FrameLayout implements IPageListViewListener
     /**
      * 绘制页信息
      * @param canvas
-     * @param zoom
+//     * @param zoom
      */
     private void drawPageNubmer(Canvas canvas)
     {

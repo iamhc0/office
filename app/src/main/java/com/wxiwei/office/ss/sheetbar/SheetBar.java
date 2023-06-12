@@ -96,10 +96,11 @@ public class SheetBar extends HorizontalScrollView implements OnClickListener
         sheetbarFrame.setOrientation(LinearLayout.HORIZONTAL);
         sheetbarFrame.setMinimumWidth(minimumWidth == -1 ? getResources().getDisplayMetrics().widthPixels
             : minimumWidth);
+        if(drawable!=null)
         sheetbarHeight = drawable.getIntrinsicHeight();
         
         drawable = sheetbarResManager.getDrawable(SheetbarResConstant.RESID_SHEETBAR_SHADOW_LEFT);
-        LayoutParams parmas = new LayoutParams(LayoutParams.WRAP_CONTENT, drawable.getIntrinsicHeight());
+        LayoutParams parmas = new LayoutParams(LayoutParams.WRAP_CONTENT, 50);
         // 左边shadow
         View left = new View(context);
         left.setBackgroundDrawable(drawable);
@@ -109,7 +110,7 @@ public class SheetBar extends HorizontalScrollView implements OnClickListener
         @ SuppressWarnings("unchecked")
         Vector<String> vec = (Vector<String>)control.getActionValue(EventConstant.SS_GET_ALL_SHEET_NAME, null);
         drawable = sheetbarResManager.getDrawable(SheetbarResConstant.RESID_SHEETBUTTON_NORMAL_LEFT);
-        LayoutParams parmasButton = new LayoutParams(LayoutParams.WRAP_CONTENT, drawable.getIntrinsicHeight());
+        LayoutParams parmasButton = new LayoutParams(LayoutParams.WRAP_CONTENT, 50);
         int count = vec.size();
         for (int i = 0; i < count; i++)
         {
